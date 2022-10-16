@@ -1,20 +1,15 @@
 {
   "mod_elements": [
     {
-      "name": "Crazy",
-      "type": "recipe",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crazy"
-    },
-    {
-      "name": "DecayingSand",
-      "type": "block",
+      "name": "HuecoMundo",
+      "type": "dimension",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "decaying_sand",
+      "registry_name": "hueco_mundo",
+      "metadata": {
+        "ep": false
+      },
       "path": "~/Dimensions/Hueco Mundo"
     },
     {
@@ -36,15 +31,12 @@
       "path": "~/Dimensions/Hueco Mundo"
     },
     {
-      "name": "HuecoMundo",
-      "type": "dimension",
+      "name": "DecayingSand",
+      "type": "block",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hueco_mundo",
-      "metadata": {
-        "ep": false
-      },
+      "registry_name": "decaying_sand",
       "path": "~/Dimensions/Hueco Mundo"
     }
   ],
@@ -59,18 +51,27 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.bleach_mod.decaying_sand": "Decaying Sand",
-      "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
-      "block.bleach_mod.hollowood": "Hollowood",
-      "biome.bleach_mod.hollow_plains": "Hollow Plains"
+      "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
+        "name": "Fullbring",
+        "children": []
+      },
+      {
+        "name": "Quincy",
+        "children": []
+      },
+      {
         "name": "Shinigami",
         "children": [
+          {
+            "name": "Bankai",
+            "children": []
+          },
           {
             "name": "Vizard",
             "children": []
@@ -78,20 +79,8 @@
           {
             "name": "Shikai",
             "children": []
-          },
-          {
-            "name": "Bankai",
-            "children": []
           }
         ]
-      },
-      {
-        "name": "Quincy",
-        "children": []
-      },
-      {
-        "name": "Fullbring",
-        "children": []
       },
       {
         "name": "Arrancar",
