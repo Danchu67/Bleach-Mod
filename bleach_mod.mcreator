@@ -1,14 +1,5 @@
 {
-  "mod_elements": [
-    {
-      "name": "Crazy",
-      "type": "recipe",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crazy"
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
