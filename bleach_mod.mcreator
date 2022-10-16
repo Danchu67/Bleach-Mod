@@ -16,7 +16,24 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Shinigami",
+        "children": []
+      },
+      {
+        "name": "Quincy",
+        "children": []
+      },
+      {
+        "name": "Fullbring",
+        "children": []
+      },
+      {
+        "name": "Arrancar",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "bleach_mod",
