@@ -19,7 +19,12 @@
     "children": [
       {
         "name": "Shinigami",
-        "children": []
+        "children": [
+          {
+            "name": "Vizard",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Quincy",
