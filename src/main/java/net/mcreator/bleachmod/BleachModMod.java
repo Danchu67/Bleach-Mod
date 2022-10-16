@@ -26,6 +26,10 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.bleachmod.init.BleachModModItems;
+import net.mcreator.bleachmod.init.BleachModModBlocks;
+import net.mcreator.bleachmod.init.BleachModModBiomes;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -42,6 +46,10 @@ public class BleachModMod {
 	public BleachModMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		BleachModModBlocks.REGISTRY.register(bus);
+		BleachModModItems.REGISTRY.register(bus);
+
+		BleachModModBiomes.REGISTRY.register(bus);
 
 	}
 

@@ -7,12 +7,63 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crazy"
+    },
+    {
+      "name": "DecayingSand",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decaying_sand",
+      "path": "~/Dimensions/Hueco Mundo"
+    },
+    {
+      "name": "Hollowood",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollowood",
+      "path": "~/Dimensions/Hueco Mundo"
+    },
+    {
+      "name": "HollowPlains",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollow_plains",
+      "path": "~/Dimensions/Hueco Mundo"
+    },
+    {
+      "name": "HuecoMundo",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hueco_mundo",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions/Hueco Mundo"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "AlignmentHollow",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.bleach_mod.decaying_sand": "Decaying Sand",
+      "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
+      "block.bleach_mod.hollowood": "Hollowood",
+      "biome.bleach_mod.hollow_plains": "Hollow Plains"
+    }
   },
   "foldersRoot": {
     "name": "~",

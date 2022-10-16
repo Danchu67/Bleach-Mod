@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bleach_mod:blocks/hollowtreeside",
+    "up": "bleach_mod:blocks/hollowtreetop",
+    "north": "bleach_mod:blocks/hollowtreeside",
+    "east": "bleach_mod:blocks/hollowtreeside",
+    "south": "bleach_mod:blocks/hollowtreeside",
+    "west": "bleach_mod:blocks/hollowtreeside",
+    "particle": "bleach_mod:blocks/hollowtreeside"
+  }
+}
