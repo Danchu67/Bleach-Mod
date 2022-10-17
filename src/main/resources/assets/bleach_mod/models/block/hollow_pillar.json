@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bleach_mod:blocks/whitesand",
+    "up": "bleach_mod:blocks/whitesand",
+    "north": "bleach_mod:blocks/red",
+    "east": "bleach_mod:blocks/red",
+    "south": "bleach_mod:blocks/red",
+    "west": "bleach_mod:blocks/red",
+    "particle": "bleach_mod:blocks/whitesand"
+  }
+}

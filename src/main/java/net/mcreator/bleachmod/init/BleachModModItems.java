@@ -19,6 +19,7 @@ public class BleachModModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, BleachModMod.MODID);
 	public static final RegistryObject<Item> DECAYING_SAND = block(BleachModModBlocks.DECAYING_SAND, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> HOLLOWOOD = block(BleachModModBlocks.HOLLOWOOD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> HOLLOW_PILLAR = block(BleachModModBlocks.HOLLOW_PILLAR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
