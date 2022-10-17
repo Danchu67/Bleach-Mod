@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "2": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "3": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "4": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "5": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "6": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "7": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "8": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "bleach_mod:chainoffate_armor_chestplate",
+    "count": 1
+  }
+}
