@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class DecayingSandBlock extends Block {
 	public DecayingSandBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(1.05f, 10f));
 	}
 
 	@Override

@@ -35,7 +35,7 @@
     ],
     "name": "Decaying Sand",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.05,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "SAND"
     },
     "breakSound": {
       "value": ""
@@ -125,11 +125,7 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
