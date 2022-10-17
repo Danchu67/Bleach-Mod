@@ -65,6 +65,15 @@
       "locked_code": false,
       "registry_name": "zangetsu",
       "path": "~/Shinigami/Zanpakutos"
+    },
+    {
+      "name": "ZangetsuShikai",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zangetsu_shikai",
+      "path": "~/Shinigami/Shikai"
     }
   ],
   "variable_elements": [
@@ -82,8 +91,7 @@
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
       "block.bleach_mod.hollowood": "Hollowood",
       "biome.bleach_mod.hollow_plains": "Hollow Plains",
-      "block.bleach_mod.hollow_pillar": "Hollow Pillar",
-      "item.bleach_mod.zangetsu": "Zangetsu"
+      "block.bleach_mod.hollow_pillar": "Hollow Pillar"
     }
   },
   "foldersRoot": {
@@ -103,8 +111,33 @@
         ]
       },
       {
+        "name": "Hollow",
+        "children": [
+          {
+            "name": "Menos",
+            "children": []
+          },
+          {
+            "name": "Adjuchas",
+            "children": []
+          },
+          {
+            "name": "Vasto",
+            "children": []
+          },
+          {
+            "name": "Hollow",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "Shinigami",
         "children": [
+          {
+            "name": "Clothes",
+            "children": []
+          },
           {
             "name": "Bankai",
             "children": []
@@ -115,10 +148,6 @@
           },
           {
             "name": "Shikai",
-            "children": []
-          },
-          {
-            "name": "Clothes",
             "children": []
           },
           {
@@ -153,27 +182,6 @@
           },
           {
             "name": "Afterlife",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Hollow",
-        "children": [
-          {
-            "name": "Hollow",
-            "children": []
-          },
-          {
-            "name": "Menos",
-            "children": []
-          },
-          {
-            "name": "Adjuchas",
-            "children": []
-          },
-          {
-            "name": "Vasto",
             "children": []
           }
         ]
