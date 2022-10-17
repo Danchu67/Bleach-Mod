@@ -74,6 +74,40 @@
       "locked_code": false,
       "registry_name": "zangetsu_shikai",
       "path": "~/Shinigami/Shikai"
+    },
+    {
+      "name": "Spawning",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General"
+    },
+    {
+      "name": "Hollowspawn",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Hollow"
     }
   ],
   "variable_elements": [
@@ -187,6 +221,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "General",
+        "children": []
       }
     ]
   },
