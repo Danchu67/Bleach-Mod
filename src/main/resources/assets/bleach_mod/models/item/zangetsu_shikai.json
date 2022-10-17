@@ -2,9 +2,8 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "bleach_mod:items/zangetsushikai"
-  }
-},
-"display": {
+  },
+	"display": {
         "ground": {
             "rotation": [ 0, 0, 0 ],
             "translation": [ 0, 3, 0],
@@ -31,3 +30,6 @@
             "scale": [ 2.0, 2.0, 2.0 ]
         }
     }
+
+  
+}
