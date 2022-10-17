@@ -38,6 +38,15 @@
       "locked_code": false,
       "registry_name": "decaying_sand",
       "path": "~/Dimensions/Hueco Mundo"
+    },
+    {
+      "name": "Hollowtree",
+      "type": "structure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollowtree",
+      "path": "~/Dimensions/Hueco Mundo"
     }
   ],
   "variable_elements": [
