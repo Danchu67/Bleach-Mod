@@ -1,7 +1,18 @@
 
 package net.mcreator.bleachmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class ZangetsuShikaiItem extends SwordItem {
 	public ZangetsuShikaiItem() {
@@ -29,11 +40,7 @@ public class ZangetsuShikaiItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		},
-
-				3, -3f,
-
-				new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 
 	@Override
@@ -42,5 +49,4 @@ public class ZangetsuShikaiItem extends SwordItem {
 		list.add(new TextComponent("Go forward"));
 		list.add(new TextComponent("Zangetsu!"));
 	}
-
 }
