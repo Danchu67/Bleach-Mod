@@ -16,6 +16,8 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.bleachmod.item.ZangetsuShikaiItem;
 import net.mcreator.bleachmod.item.ZangetsuItem;
 import net.mcreator.bleachmod.item.ZangetsuBankaiItem;
+import net.mcreator.bleachmod.item.ZabimaruShikaiItem;
+import net.mcreator.bleachmod.item.ZabimaruItem;
 import net.mcreator.bleachmod.item.SenbonzakuraShikaiItem;
 import net.mcreator.bleachmod.item.SenbonzakuraItem;
 import net.mcreator.bleachmod.item.ChainoffateItem;
@@ -42,6 +44,8 @@ public class BleachModModItems {
 			() -> new ChainoffateItem.Chestplate());
 	public static final RegistryObject<Item> SENBONZAKURA = REGISTRY.register("senbonzakura", () -> new SenbonzakuraItem());
 	public static final RegistryObject<Item> SENBONZAKURA_SHIKAI = REGISTRY.register("senbonzakura_shikai", () -> new SenbonzakuraShikaiItem());
+	public static final RegistryObject<Item> ZABIMARU = REGISTRY.register("zabimaru", () -> new ZabimaruItem());
+	public static final RegistryObject<Item> ZABIMARU_SHIKAI = REGISTRY.register("zabimaru_shikai", () -> new ZabimaruShikaiItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
