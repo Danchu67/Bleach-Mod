@@ -46,6 +46,8 @@ public class BleachModModItems {
 	public static final RegistryObject<Item> SENBONZAKURA_SHIKAI = REGISTRY.register("senbonzakura_shikai", () -> new SenbonzakuraShikaiItem());
 	public static final RegistryObject<Item> ZABIMARU = REGISTRY.register("zabimaru", () -> new ZabimaruItem());
 	public static final RegistryObject<Item> ZABIMARU_SHIKAI = REGISTRY.register("zabimaru_shikai", () -> new ZabimaruShikaiItem());
+	public static final RegistryObject<Item> DANGAI_HALLWAY = block(BleachModModBlocks.DANGAI_HALLWAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> DANGAIFLOOR = block(BleachModModBlocks.DANGAIFLOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,6 +1,7 @@
 {
   "block.bleach_mod.decaying_sand": "Decaying Sand",
   "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
+  "block.bleach_mod.dangai_hallway": "Dangai Hallway",
   "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
   "item.bleach_mod.chainoffate_helmet": "Chainoffate Helmet",
   "item.bleach_mod.senbonzakura": "Senbonzakura",
@@ -17,6 +18,8 @@
   "item.bleach_mod.chainoffate_leggings": "Chainoffate Leggings",
   "biome.bleach_mod.hollow_plains": "Hollow Plains",
   "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
+  "block.bleach_mod.dangaifloor": "Dangaifloor",
+  "item.bleach_mod.dangai": "Dangai Portal Igniter",
   "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
   "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate"
 }

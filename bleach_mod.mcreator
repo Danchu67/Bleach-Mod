@@ -219,6 +219,36 @@
       "locked_code": false,
       "registry_name": "zabimaru_shikai",
       "path": "~/Shinigami/Zanpakutos"
+    },
+    {
+      "name": "DangaiHallway",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangai_hallway",
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Dangaifloor",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangaifloor",
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Dangai",
+      "type": "dimension",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangai",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions/Afterlife"
     }
   ],
   "variable_elements": [
@@ -234,6 +264,7 @@
     "en_us": {
       "block.bleach_mod.decaying_sand": "Decaying Sand",
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
+      "block.bleach_mod.dangai_hallway": "Dangai Hallway",
       "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
       "item.bleach_mod.chainoffate_helmet": "Chainoffate Helmet",
       "item.bleach_mod.senbonzakura": "Senbonzakura",
@@ -250,6 +281,8 @@
       "item.bleach_mod.chainoffate_leggings": "Chainoffate Leggings",
       "biome.bleach_mod.hollow_plains": "Hollow Plains",
       "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
+      "block.bleach_mod.dangaifloor": "Dangaifloor",
+      "item.bleach_mod.dangai": "Dangai Portal Igniter",
       "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
       "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate"
     }
