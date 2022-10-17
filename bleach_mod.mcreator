@@ -74,6 +74,15 @@
       "locked_code": false,
       "registry_name": "zangetsu_shikai",
       "path": "~/Shinigami/Shikai"
+    },
+    {
+      "name": "ZangetsuBankai",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zangetsu_bankai",
+      "path": "~/Shinigami/Bankai"
     }
   ],
   "variable_elements": [
@@ -89,6 +98,7 @@
     "en_us": {
       "block.bleach_mod.decaying_sand": "Decaying Sand",
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
+      "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
       "block.bleach_mod.hollowood": "Hollowood",
       "biome.bleach_mod.hollow_plains": "Hollow Plains",
       "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",

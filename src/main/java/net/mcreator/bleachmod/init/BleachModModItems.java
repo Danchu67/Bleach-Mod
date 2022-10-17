@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.bleachmod.item.ZangetsuShikaiItem;
 import net.mcreator.bleachmod.item.ZangetsuItem;
+import net.mcreator.bleachmod.item.ZangetsuBankaiItem;
 import net.mcreator.bleachmod.BleachModMod;
 
 public class BleachModModItems {
@@ -24,6 +25,7 @@ public class BleachModModItems {
 	public static final RegistryObject<Item> HOLLOW_PILLAR = block(BleachModModBlocks.HOLLOW_PILLAR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ZANGETSU = REGISTRY.register("zangetsu", () -> new ZangetsuItem());
 	public static final RegistryObject<Item> ZANGETSU_SHIKAI = REGISTRY.register("zangetsu_shikai", () -> new ZangetsuShikaiItem());
+	public static final RegistryObject<Item> ZANGETSU_BANKAI = REGISTRY.register("zangetsu_bankai", () -> new ZangetsuBankaiItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
