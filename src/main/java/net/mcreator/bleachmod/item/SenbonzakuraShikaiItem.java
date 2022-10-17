@@ -7,8 +7,8 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class ZangetsuBankaiItem extends PickaxeItem {
-	public ZangetsuBankaiItem() {
+public class SenbonzakuraShikaiItem extends PickaxeItem {
+	public SenbonzakuraShikaiItem() {
 		super(new Tier() {
 			public int getUses() {
 				return 100;
