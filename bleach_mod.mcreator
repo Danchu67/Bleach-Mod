@@ -83,6 +83,106 @@
       "locked_code": false,
       "registry_name": "zangetsu_bankai",
       "path": "~/Shinigami/Bankai"
+    },
+    {
+      "name": "ChainoffateArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate_armor_leggings_recipe",
+      "path": "~/Plus"
+    },
+    {
+      "name": "ChainoffateArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate_armor_helmet_recipe",
+      "path": "~/Plus"
+    },
+    {
+      "name": "Spawning",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General"
+    },
+    {
+      "name": "ChainoffateArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate_armor_boots_recipe",
+      "path": "~/Plus"
+    },
+    {
+      "name": "Hollowspawn",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Hollow"
+    },
+    {
+      "name": "ChainoffateArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate_armor_body_recipe",
+      "path": "~/Plus"
+    },
+    {
+      "name": "Chainoffate",
+      "type": "armor",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Plus"
+    },
+    {
+      "name": "ChainoffateArmor",
+      "type": "armor",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainoffate_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Plus"
     }
   ],
   "variable_elements": [
@@ -98,12 +198,11 @@
     "en_us": {
       "block.bleach_mod.decaying_sand": "Decaying Sand",
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
-      "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
       "block.bleach_mod.hollowood": "Hollowood",
-      "biome.bleach_mod.hollow_plains": "Hollow Plains",
-      "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
       "block.bleach_mod.hollow_pillar": "Hollow Pillar",
-      "item.bleach_mod.zangetsu": "Zangetsu"
+      "item.bleach_mod.zangetsu": "Zangetsu",
+      "biome.bleach_mod.hollow_plains": "Hollow Plains",
+      "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai"
     }
   },
   "foldersRoot": {
@@ -111,6 +210,10 @@
     "children": [
       {
         "name": "Fullbring",
+        "children": []
+      },
+      {
+        "name": "General",
         "children": []
       },
       {
@@ -167,6 +270,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Plus",
+        "children": []
       },
       {
         "name": "Arrancar",
