@@ -372,7 +372,12 @@
           },
           {
             "name": "Shikai",
-            "children": []
+            "children": [
+              {
+                "name": "Zangetsu",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Zanpakutos",
