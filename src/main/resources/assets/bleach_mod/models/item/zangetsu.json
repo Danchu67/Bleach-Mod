@@ -2,32 +2,5 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "bleach_mod:items/zangetsusealed"
-  },
-	"display": {
-        "ground": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 3, 0],
-            "scale":[ 1, 1, 1 ]
-        },
-        "fixed": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 0, 0],
-            "scale":[ 1, 1, 1 ]
-        },
-        "thirdperson_righthand": {
-            "rotation": [ 0, 270, 40 ],
-            "translation": [ 0, 15, 2 ],
-            "scale": [ 1.5, 2.0, 2.0 ]
-        },
-        "firstperson_righthand": {
-            "rotation": [ 0, 270, 40 ],
-            "translation": [ 0, 15, 2 ],
-            "scale": [ 1.5, 2.0, 2.0 ]
-        },
-        "firstperson_lefthand": {
-            "rotation": [ 0, 270, 40 ],
-            "translation": [ 0, 15, 2 ],
-            "scale": [ 1.5, 2.0, 2.0 ]
-        }
-    }
+  }
 }

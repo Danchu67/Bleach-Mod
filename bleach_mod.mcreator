@@ -277,15 +277,6 @@
       "path": "~/Dimensions/Afterlife"
     },
     {
-      "name": "Test",
-      "type": "rangeditem",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "path": "~/Shinigami/Shikai/Zangetsu"
-    },
-    {
       "name": "Shihakusho",
       "type": "armor",
       "sortid": 17,
