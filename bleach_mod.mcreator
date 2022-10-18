@@ -249,6 +249,32 @@
         "ep": false
       },
       "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "OverworldportalEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldportal_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Overworldportal",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldportal",
+      "path": "~/Dimensions/Afterlife"
     }
   ],
   "variable_elements": [
@@ -262,29 +288,30 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.bleach_mod.overworldportal": "Overworldportal",
+      "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
+      "item.bleach_mod.zabimaru": "Zabimaru",
+      "item.bleach_mod.senbonzakura_shikai": "Senbonzakura Shikai",
+      "biome.bleach_mod.hollow_plains": "Hollow Plains",
+      "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
+      "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate",
       "block.bleach_mod.decaying_sand": "Decaying Sand",
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
       "block.bleach_mod.dangai_hallway": "Dangai Hallway",
-      "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
       "item.bleach_mod.chainoffate_helmet": "Chainoffate Helmet",
       "item.bleach_mod.senbonzakura": "Senbonzakura",
       "item.bleach_mod.chainoffate_armor_helmet": "Chainoffate Helmet",
       "block.bleach_mod.hollowood": "Hollowood",
       "item.bleach_mod.chainoffate_armor_leggings": "Chainoffate Leggings",
       "item.bleach_mod.zabimaru_shikai": "Zabimaru Shikai",
-      "item.bleach_mod.chainoffate_boots": "Chainoffate Boots",
       "item.bleach_mod.chainoffate_armor_chestplate": "Chainoffate Chestplate",
-      "item.bleach_mod.zabimaru": "Zabimaru",
+      "item.bleach_mod.chainoffate_boots": "Chainoffate Boots",
       "block.bleach_mod.hollow_pillar": "Hollow Pillar",
       "item.bleach_mod.zangetsu": "Zangetsu",
-      "item.bleach_mod.senbonzakura_shikai": "Senbonzakura Shikai",
       "item.bleach_mod.chainoffate_leggings": "Chainoffate Leggings",
-      "biome.bleach_mod.hollow_plains": "Hollow Plains",
       "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
       "block.bleach_mod.dangaifloor": "Dangaifloor",
-      "item.bleach_mod.dangai": "Dangai Portal Igniter",
-      "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
-      "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate"
+      "item.bleach_mod.dangai": "Dangai Portal Igniter"
     }
   },
   "foldersRoot": {
