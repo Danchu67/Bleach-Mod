@@ -2,14 +2,14 @@
 // Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
+public class ModelGetsugashikai<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "custom_model"), "main");
+			new ResourceLocation("modid", "getsugashikai"), "main");
 	private final ModelPart bone;
 
-	public Modelcustom_model(ModelPart root) {
+	public ModelGetsugashikai(ModelPart root) {
 		this.bone = root.getChild("bone");
 	}
 

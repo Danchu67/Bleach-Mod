@@ -25,7 +25,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.bleachmod.client.model.Modelcustom_model;
+import net.mcreator.bleachmod.client.model.ModelChainoFate;
 
 import java.util.Map;
 import java.util.List;
@@ -87,12 +87,11 @@ public abstract class ChainoffateItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body",
-							new Modelcustom_model(Minecraft.getInstance().getEntityModels().bakeLayer(Modelcustom_model.LAYER_LOCATION)).Body,
-							"left_arm",
-							new Modelcustom_model(Minecraft.getInstance().getEntityModels().bakeLayer(Modelcustom_model.LAYER_LOCATION)).LeftArm,
+							new ModelChainoFate(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChainoFate.LAYER_LOCATION)).Body, "left_arm",
+							new ModelChainoFate(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChainoFate.LAYER_LOCATION)).LeftArm,
 							"right_arm",
-							new Modelcustom_model(Minecraft.getInstance().getEntityModels().bakeLayer(Modelcustom_model.LAYER_LOCATION)).RightArm,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							new ModelChainoFate(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChainoFate.LAYER_LOCATION)).RightArm, "head",
+							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()))));

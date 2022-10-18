@@ -18,6 +18,7 @@ import net.mcreator.bleachmod.item.ZangetsuItem;
 import net.mcreator.bleachmod.item.ZangetsuBankaiItem;
 import net.mcreator.bleachmod.item.ZabimaruShikaiItem;
 import net.mcreator.bleachmod.item.ZabimaruItem;
+import net.mcreator.bleachmod.item.TestItem;
 import net.mcreator.bleachmod.item.SenbonzakuraShikaiItem;
 import net.mcreator.bleachmod.item.SenbonzakuraItem;
 import net.mcreator.bleachmod.item.ChainoffateItem;
@@ -49,6 +50,7 @@ public class BleachModModItems {
 	public static final RegistryObject<Item> DANGAI_HALLWAY = block(BleachModModBlocks.DANGAI_HALLWAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> DANGAIFLOOR = block(BleachModModBlocks.DANGAIFLOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> OVERWORLDPORTAL = block(BleachModModBlocks.OVERWORLDPORTAL, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> TEST = REGISTRY.register("test", () -> new TestItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

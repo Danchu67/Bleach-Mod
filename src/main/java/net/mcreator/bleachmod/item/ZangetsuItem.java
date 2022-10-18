@@ -3,15 +3,15 @@ package net.mcreator.bleachmod.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class ZangetsuItem extends PickaxeItem {
+public class ZangetsuItem extends SwordItem {
 	public ZangetsuItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 0;
 			}
 
 			public float getSpeed() {
@@ -19,7 +19,7 @@ public class ZangetsuItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -27,12 +27,12 @@ public class ZangetsuItem extends PickaxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 2;
+				return 0;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 3, -3.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 }

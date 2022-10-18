@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.bleachmod.init.BleachModModItems;
 import net.mcreator.bleachmod.init.BleachModModFeatures;
+import net.mcreator.bleachmod.init.BleachModModEntities;
 import net.mcreator.bleachmod.init.BleachModModBlocks;
 import net.mcreator.bleachmod.init.BleachModModBiomes;
 
@@ -49,6 +50,7 @@ public class BleachModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		BleachModModBlocks.REGISTRY.register(bus);
 		BleachModModItems.REGISTRY.register(bus);
+		BleachModModEntities.REGISTRY.register(bus);
 
 		BleachModModFeatures.REGISTRY.register(bus);
 
