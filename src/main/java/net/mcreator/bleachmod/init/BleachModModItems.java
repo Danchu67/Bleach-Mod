@@ -18,6 +18,8 @@ import net.mcreator.bleachmod.item.ZangetsuItem;
 import net.mcreator.bleachmod.item.ZangetsuBankaiItem;
 import net.mcreator.bleachmod.item.ZabimaruShikaiItem;
 import net.mcreator.bleachmod.item.ZabimaruItem;
+import net.mcreator.bleachmod.item.ShihakushoItem;
+import net.mcreator.bleachmod.item.ShihakushoArmorItem;
 import net.mcreator.bleachmod.item.SenbonzakuraShikaiItem;
 import net.mcreator.bleachmod.item.SenbonzakuraItem;
 import net.mcreator.bleachmod.item.ChainoffateItem;
@@ -46,6 +48,17 @@ public class BleachModModItems {
 	public static final RegistryObject<Item> SENBONZAKURA_SHIKAI = REGISTRY.register("senbonzakura_shikai", () -> new SenbonzakuraShikaiItem());
 	public static final RegistryObject<Item> ZABIMARU = REGISTRY.register("zabimaru", () -> new ZabimaruItem());
 	public static final RegistryObject<Item> ZABIMARU_SHIKAI = REGISTRY.register("zabimaru_shikai", () -> new ZabimaruShikaiItem());
+	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_HELMET = REGISTRY.register("shihakusho_armor_helmet",
+			() -> new ShihakushoArmorItem.Helmet());
+	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_CHESTPLATE = REGISTRY.register("shihakusho_armor_chestplate",
+			() -> new ShihakushoArmorItem.Chestplate());
+	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_LEGGINGS = REGISTRY.register("shihakusho_armor_leggings",
+			() -> new ShihakushoArmorItem.Leggings());
+	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_BOOTS = REGISTRY.register("shihakusho_armor_boots",
+			() -> new ShihakushoArmorItem.Boots());
+	public static final RegistryObject<Item> SHIHAKUSHO_CHESTPLATE = REGISTRY.register("shihakusho_chestplate",
+			() -> new ShihakushoItem.Chestplate());
+	public static final RegistryObject<Item> SHIHAKUSHO_LEGGINGS = REGISTRY.register("shihakusho_leggings", () -> new ShihakushoItem.Leggings());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

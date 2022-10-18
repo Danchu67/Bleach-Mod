@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "1": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "2": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "3": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "5": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "item": "bleach_mod:shihakusho_armor_helmet",
+    "count": 1
+  }
+}
