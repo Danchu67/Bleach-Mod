@@ -19,7 +19,6 @@ import net.mcreator.bleachmod.item.ZangetsuBankaiItem;
 import net.mcreator.bleachmod.item.ZabimaruShikaiItem;
 import net.mcreator.bleachmod.item.ZabimaruItem;
 import net.mcreator.bleachmod.item.ShihakushoItem;
-import net.mcreator.bleachmod.item.ShihakushoArmorItem;
 import net.mcreator.bleachmod.item.SenbonzakuraShikaiItem;
 import net.mcreator.bleachmod.item.SenbonzakuraItem;
 import net.mcreator.bleachmod.item.ChainoffateItem;
@@ -51,14 +50,6 @@ public class BleachModModItems {
 	public static final RegistryObject<Item> SHIHAKUSHO_CHESTPLATE = REGISTRY.register("shihakusho_chestplate",
 			() -> new ShihakushoItem.Chestplate());
 	public static final RegistryObject<Item> SHIHAKUSHO_LEGGINGS = REGISTRY.register("shihakusho_leggings", () -> new ShihakushoItem.Leggings());
-	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_HELMET = REGISTRY.register("shihakusho_armor_helmet",
-			() -> new ShihakushoArmorItem.Helmet());
-	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_CHESTPLATE = REGISTRY.register("shihakusho_armor_chestplate",
-			() -> new ShihakushoArmorItem.Chestplate());
-	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_LEGGINGS = REGISTRY.register("shihakusho_armor_leggings",
-			() -> new ShihakushoArmorItem.Leggings());
-	public static final RegistryObject<Item> SHIHAKUSHO_ARMOR_BOOTS = REGISTRY.register("shihakusho_armor_boots",
-			() -> new ShihakushoArmorItem.Boots());
 	public static final RegistryObject<Item> DANGAI_HALLWAY = block(BleachModModBlocks.DANGAI_HALLWAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> DANGAIFLOOR = block(BleachModModBlocks.DANGAIFLOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> OVERWORLDPORTAL = block(BleachModModBlocks.OVERWORLDPORTAL, CreativeModeTab.TAB_MISC);
