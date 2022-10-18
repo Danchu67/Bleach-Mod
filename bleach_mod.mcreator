@@ -221,6 +221,30 @@
       "path": "~/Shinigami/Zanpakutos"
     },
     {
+      "name": "Shihakusho",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shihakusho",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Shinigami"
+    },
+    {
+      "name": "ShihakushoArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shihakusho_armor_body_recipe",
+      "path": "~/Shinigami"
+    },
+    {
       "name": "ShihakushoArmor",
       "type": "armor",
       "sortid": 17,
@@ -245,15 +269,6 @@
       "path": "~/Shinigami"
     },
     {
-      "name": "ShihakushoArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shihakusho_armor_body_recipe",
-      "path": "~/Shinigami"
-    },
-    {
       "name": "ShihakushoArmorLeggingsRecipe",
       "type": "recipe",
       "sortid": 20,
@@ -272,19 +287,60 @@
       "path": "~/Shinigami"
     },
     {
-      "name": "Shihakusho",
-      "type": "armor",
+      "name": "OverworldportalEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldportal_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Dangaifloor",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangaifloor",
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Overworldportal",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overworldportal",
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "Dangai",
+      "type": "dimension",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangai",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions/Afterlife"
+    },
+    {
+      "name": "DangaiHallway",
+      "type": "block",
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "shihakusho",
-      "metadata": {
-        "eh": false,
-        "el": true,
-        "eb": false,
-        "ec": true
-      },
-      "path": "~/Shinigami"
+      "registry_name": "dangai_hallway",
+      "path": "~/Dimensions/Afterlife"
     }
   ],
   "variable_elements": [
@@ -299,20 +355,16 @@
   "language_map": {
     "en_us": {
       "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
-      "item.bleach_mod.shihakusho_armor_helmet": "Shihakusho Helmet",
       "item.bleach_mod.zabimaru": "Zabimaru",
       "item.bleach_mod.senbonzakura_shikai": "Senbonzakura Shikai",
-      "item.bleach_mod.shihakusho_leggings": "Shihakusho Leggings",
       "biome.bleach_mod.hollow_plains": "Hollow Plains",
       "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
-      "item.bleach_mod.shihakusho_armor_chestplate": "Shihakusho Chestplate",
       "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate",
       "block.bleach_mod.decaying_sand": "Decaying Sand",
       "item.bleach_mod.hueco_mundo": "Hueco Mundo Portal Igniter",
       "item.bleach_mod.chainoffate_helmet": "Chainoffate Helmet",
       "item.bleach_mod.senbonzakura": "Senbonzakura",
       "item.bleach_mod.chainoffate_armor_helmet": "Chainoffate Helmet",
-      "item.bleach_mod.shihakusho_chestplate": "Shihakusho Body",
       "block.bleach_mod.hollowood": "Hollowood",
       "item.bleach_mod.chainoffate_armor_leggings": "Chainoffate Leggings",
       "item.bleach_mod.zabimaru_shikai": "Zabimaru Shikai",
@@ -320,12 +372,8 @@
       "item.bleach_mod.chainoffate_boots": "Chainoffate Boots",
       "block.bleach_mod.hollow_pillar": "Hollow Pillar",
       "item.bleach_mod.zangetsu": "Zangetsu",
-      "item.bleach_mod.shihakusho_boots": "Shihakusho Boots",
-      "item.bleach_mod.shihakusho_helmet": "Shihakusho Helmet",
-      "item.bleach_mod.shihakusho_armor_boots": "Shihakusho Boots",
       "item.bleach_mod.chainoffate_leggings": "Chainoffate Leggings",
-      "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
-      "item.bleach_mod.shihakusho_armor_leggings": "Shihakusho Leggings"
+      "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai"
     }
   },
   "foldersRoot": {
@@ -386,7 +434,12 @@
           },
           {
             "name": "Shikai",
-            "children": []
+            "children": [
+              {
+                "name": "Zangetsu",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Zanpakutos",

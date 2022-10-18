@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bleach_mod:blocks/overportalblock",
+    "up": "bleach_mod:blocks/overportalblock",
+    "north": "bleach_mod:blocks/overportalblock",
+    "east": "bleach_mod:blocks/overportalblock",
+    "south": "bleach_mod:blocks/overportalblock",
+    "west": "bleach_mod:blocks/overportalblock",
+    "particle": "bleach_mod:blocks/overportalblock"
+  }
+}
