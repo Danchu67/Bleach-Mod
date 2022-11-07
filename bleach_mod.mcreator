@@ -326,6 +326,23 @@
       "locked_code": false,
       "registry_name": "shihakusho_armor_boots_recipe",
       "path": "~/Shinigami"
+    },
+    {
+      "name": "TestWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Shinigami/Shikai/Zangetsu"
     }
   ],
   "variable_elements": [
@@ -343,6 +360,7 @@
       "item.bleach_mod.zangetsu_bankai": "Zangetsu Bankai",
       "item.bleach_mod.zabimaru": "Zabimaru",
       "item.bleach_mod.senbonzakura_shikai": "Senbonzakura Shikai",
+      "item.bleach_mod.shihakusho_leggings": "Shihakusho Leggings",
       "biome.bleach_mod.hollow_plains": "Hollow Plains",
       "item.bleach_mod.chainoffate_armor_boots": "Chainoffate Boots",
       "item.bleach_mod.chainoffate_chestplate": "The Chain of Fate",
@@ -352,6 +370,7 @@
       "item.bleach_mod.chainoffate_helmet": "Chainoffate Helmet",
       "item.bleach_mod.senbonzakura": "Senbonzakura",
       "item.bleach_mod.chainoffate_armor_helmet": "Chainoffate Helmet",
+      "item.bleach_mod.shihakusho_chestplate": "Shihakusho Body",
       "block.bleach_mod.hollowood": "Hollowood",
       "item.bleach_mod.chainoffate_armor_leggings": "Chainoffate Leggings",
       "item.bleach_mod.zabimaru_shikai": "Zabimaru Shikai",
@@ -359,6 +378,8 @@
       "item.bleach_mod.chainoffate_boots": "Chainoffate Boots",
       "block.bleach_mod.hollow_pillar": "Hollow Pillar",
       "item.bleach_mod.zangetsu": "Zangetsu",
+      "item.bleach_mod.shihakusho_boots": "Shihakusho Boots",
+      "item.bleach_mod.shihakusho_helmet": "Shihakusho Helmet",
       "item.bleach_mod.chainoffate_leggings": "Chainoffate Leggings",
       "item.bleach_mod.zangetsu_shikai": "Zangetsu Shikai",
       "block.bleach_mod.dangaifloor": "Dangaifloor",
@@ -490,5 +511,5 @@
     "modElementsPackage": "net.mcreator.bleachmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200234517
+  "mcreatorVersion": 202200345616
 }

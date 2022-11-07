@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "biome",
   "definition": {
     "name": "Hollow Plains",
@@ -42,7 +42,6 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "EXTREME_HILLS",
     "rainingPossibility": 0.0,
     "temperature": -0.5,
     "baseHeight": 1.0,
@@ -51,9 +50,6 @@
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 11,
-    "biomeDictionaryTypes": [
-      "HILLS"
-    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

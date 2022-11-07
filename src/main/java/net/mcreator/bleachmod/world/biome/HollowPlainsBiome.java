@@ -1,8 +1,6 @@
 
 package net.mcreator.bleachmod.world.biome;
 
-import net.minecraftforge.common.BiomeDictionary;
-
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -20,14 +18,10 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.data.BuiltinRegistries;
-import net.minecraft.core.Registry;
 
 import net.mcreator.bleachmod.init.BleachModModBlocks;
-import net.mcreator.bleachmod.init.BleachModModBiomes;
 
 import java.util.List;
 
@@ -48,13 +42,8 @@ public class HollowPlainsBiome {
 								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
 								BiomeFilter.biome())));
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.EXTREME_HILLS).temperature(-0.5f)
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).temperature(-0.5f)
 				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
-	}
-
-	public static void init() {
-		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(BleachModModBiomes.HOLLOW_PLAINS.get())),
-				BiomeDictionary.Type.HILLS);
 	}
 }

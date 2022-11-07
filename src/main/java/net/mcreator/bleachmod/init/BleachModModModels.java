@@ -11,7 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.bleachmod.client.model.Modelcustom_model;
 import net.mcreator.bleachmod.client.model.ModelShihakusho;
-import net.mcreator.bleachmod.client.model.ModelGetsugashikai;
 import net.mcreator.bleachmod.client.model.ModelChainoFate;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -19,7 +18,6 @@ public class BleachModModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelShihakusho.LAYER_LOCATION, ModelShihakusho::createBodyLayer);
-		event.registerLayerDefinition(ModelGetsugashikai.LAYER_LOCATION, ModelGetsugashikai::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(ModelChainoFate.LAYER_LOCATION, ModelChainoFate::createBodyLayer);
 	}
