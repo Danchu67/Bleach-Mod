@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "zangetsushikai",
+    "customModelName": "Normal",
+    "name": "Test",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.05,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "ModelGetsugsTenshou",
+    "customBulletModelTexture": "getsugatentext.png",
+    "onBulletHitsBlock": {
+      "name": "TestProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "TestProjectileHitsBlock"
+    },
+    "onBulletFlyingTick": {
+      "name": "TestWhileProjectileFlyingTick"
+    }
+  }
+}

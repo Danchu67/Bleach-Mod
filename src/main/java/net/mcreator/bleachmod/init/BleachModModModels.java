@@ -11,12 +11,14 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.bleachmod.client.model.Modelcustom_model;
 import net.mcreator.bleachmod.client.model.ModelShihakusho;
+import net.mcreator.bleachmod.client.model.ModelGetsugsTenshou;
 import net.mcreator.bleachmod.client.model.ModelChainoFate;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class BleachModModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(ModelGetsugsTenshou.LAYER_LOCATION, ModelGetsugsTenshou::createBodyLayer);
 		event.registerLayerDefinition(ModelShihakusho.LAYER_LOCATION, ModelShihakusho::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(ModelChainoFate.LAYER_LOCATION, ModelChainoFate::createBodyLayer);
