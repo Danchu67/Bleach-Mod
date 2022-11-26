@@ -5,12 +5,10 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.Entity;
 
 public class TestWhileProjectileFlyingTickProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
+	public static void execute(LevelAccessor world, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
 		immediatesourceentity.setNoGravity((true));
@@ -36,8 +34,8 @@ public class TestWhileProjectileFlyingTickProcedure {
 
 			private void run() {
 				MinecraftForge.EVENT_BUS.unregister(TestWhileProjectileFlyingTickWait2.this);
-				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.BREAK);
+				if (!immediatesourceentity.level.isClientSide())
+					immediatesourceentity.discard();
 			}
 		}
 		new TestWhileProjectileFlyingTickWait2().start(world, 100);

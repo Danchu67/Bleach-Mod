@@ -81,7 +81,7 @@ public class TestEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		TestWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		TestWhileProjectileFlyingTickProcedure.execute(this.level, this);
 		if (this.inGround)
 			this.discard();
 	}
