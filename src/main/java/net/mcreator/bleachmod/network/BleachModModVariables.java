@@ -73,6 +73,7 @@ public class BleachModModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PlayerVariables()));
 			clone.AlignmentHollow = original.AlignmentHollow;
+			clone.AlignmentShinigami = original.AlignmentShinigami;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -110,6 +111,7 @@ public class BleachModModVariables {
 
 	public static class PlayerVariables {
 		public boolean AlignmentHollow = false;
+		public boolean AlignmentShinigami = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,12 +121,14 @@ public class BleachModModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("AlignmentHollow", AlignmentHollow);
+			nbt.putBoolean("AlignmentShinigami", AlignmentShinigami);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			AlignmentHollow = nbt.getBoolean("AlignmentHollow");
+			AlignmentShinigami = nbt.getBoolean("AlignmentShinigami");
 		}
 	}
 
@@ -151,6 +155,7 @@ public class BleachModModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
 					variables.AlignmentHollow = message.data.AlignmentHollow;
+					variables.AlignmentShinigami = message.data.AlignmentShinigami;
 				}
 			});
 			context.setPacketHandled(true);
