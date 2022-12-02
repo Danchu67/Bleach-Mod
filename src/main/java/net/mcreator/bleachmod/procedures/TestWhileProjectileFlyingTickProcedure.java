@@ -12,32 +12,31 @@ public class TestWhileProjectileFlyingTickProcedure {
 		if (immediatesourceentity == null)
 			return;
 		immediatesourceentity.setNoGravity((true));
-		class TestWhileProjectileFlyingTickWait2 {
+		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
 			private LevelAccessor world;
 
 			public void start(LevelAccessor world, int waitTicks) {
 				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
-				MinecraftForge.EVENT_BUS.register(TestWhileProjectileFlyingTickWait2.this);
 			}
 
 			@SubscribeEvent
 			public void tick(TickEvent.ServerTickEvent event) {
 				if (event.phase == TickEvent.Phase.END) {
-					TestWhileProjectileFlyingTickWait2.this.ticks += 1;
-					if (TestWhileProjectileFlyingTickWait2.this.ticks >= TestWhileProjectileFlyingTickWait2.this.waitTicks)
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
 						run();
 				}
 			}
 
 			private void run() {
-				MinecraftForge.EVENT_BUS.unregister(TestWhileProjectileFlyingTickWait2.this);
 				if (!immediatesourceentity.level.isClientSide())
 					immediatesourceentity.discard();
+				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}
-		new TestWhileProjectileFlyingTickWait2().start(world, 100);
+		}.start(world, 100);
 	}
 }
