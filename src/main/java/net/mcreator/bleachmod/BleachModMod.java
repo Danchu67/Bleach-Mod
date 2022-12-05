@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.bleachmod.init.BleachModModParticleTypes;
 import net.mcreator.bleachmod.init.BleachModModItems;
 import net.mcreator.bleachmod.init.BleachModModFeatures;
 import net.mcreator.bleachmod.init.BleachModModEntities;
@@ -55,7 +56,7 @@ public class BleachModMod {
 		BleachModModFeatures.REGISTRY.register(bus);
 
 		BleachModModBiomes.REGISTRY.register(bus);
-
+		BleachModModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

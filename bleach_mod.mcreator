@@ -411,6 +411,15 @@
         ]
       },
       "path": "~/Shinigami/Shikai/Zangetsu"
+    },
+    {
+      "name": "Cherryblossom",
+      "type": "particle",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherryblossom",
+      "path": "~/Shinigami/Shikai/Senbonzakura Scatter"
     }
   ],
   "variable_elements": [
@@ -523,6 +532,10 @@
             "children": [
               {
                 "name": "Zangetsu",
+                "children": []
+              },
+              {
+                "name": "Senbonzakura Scatter",
                 "children": []
               }
             ]
